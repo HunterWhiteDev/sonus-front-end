@@ -1,0 +1,39 @@
+.userProfile {
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userProfile__header {
+  display: flex;
+  align-items: center;
+}
+
+.userProfile__header > img {
+  margin-right: 15px;
+  object-fit: contain;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.userProfile__headerBigName {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.userProfile__headerSmallName {
+  opacity: 0.65;
+  color: white;
+}
+
+.userProfile__body {
+  margin-top: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
