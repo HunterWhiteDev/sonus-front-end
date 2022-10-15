@@ -51,17 +51,34 @@ function App() {
                 onClick={() => handleNavigateToUser(index)}
                 className="app__bodyVoiceUser"
               >
-                <div className="app__bodyVoiceUserRank">
-                  <p>{voiceUser.Rank}</p>
-                </div>
-                <p
-                  className="app__bodyVoiceUserName"
-                  style={{ color: voiceUser.RoleColor }}
-                >
-                  {voiceUser.UserName}#{voiceUser.UserDiscriminator}
-                </p>
+                <div className="app__bodyVoiceUserLeft">
+                  <div className="app__bodyVoiceUserRank">
+                    <p>{voiceUser.Rank}</p>
+                  </div>
 
-                <p className="app__bodyVoiceUserTotalTime"></p>
+                  <img
+                    className="app__bodyVoiceUserPfp"
+                    src={voiceUser.AvatarUrl}
+                    alt=""
+                  />
+
+                  <p
+                    className="app__bodyVoiceUserName"
+                    style={{ color: voiceUser.RoleColor }}
+                  >
+                    {voiceUser.UserName}#{voiceUser.UserDiscriminator}
+                  </p>
+                </div>
+                <div className="app__bodyVoiceUserRight">
+                  <p className="app__bodyVoiceUserTotalTime">
+                    {voiceUser.TotalTime.Days} Days {voiceUser.TotalTime.Hours}{" "}
+                    Hours
+                  </p>
+                  <p className="app__bodyVoiceUserTotalTime">
+                    {voiceUser.TotalTime.Minutes} Minutes{" "}
+                    {voiceUser.TotalTime.Seconds} Seconds{" "}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

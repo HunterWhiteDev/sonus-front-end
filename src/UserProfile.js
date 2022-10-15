@@ -20,7 +20,7 @@ function UserProfile({ user }) {
           <div className="userProfile__headerBigName">
             {user.NickName
               ? user.NickName
-              : user.UserName + "#" + user.UserDescriminator}
+              : user.UserName + "#" + user.UserDiscriminator}
           </div>
           <div className="userProfile__headerSmallName">
             {user.NickName
@@ -33,7 +33,7 @@ function UserProfile({ user }) {
       <div className="userProfile__body">
         <div className="userProfile__bodyItemContainer">
           <ComputerIcon />
-          <p>Total Time</p>
+          <p className="userProfile__bodyItemContainerHeader">Total Time</p>
           <p>
             <em>{user.TotalTime.Days}</em> Days <em>{user.TotalTime.Hours}</em>{" "}
             Hours <em>{user.TotalTime.Minutes}</em> Minutes{" "}
@@ -43,7 +43,7 @@ function UserProfile({ user }) {
 
         <div className="userProfile__bodyItemContainer">
           <HeadsetMicIcon />
-          <p>Total Active Time</p>
+          <p className="userProfile__bodyItemContainerHeader">Active Time</p>
           <p>
             <em>{user.ActiveTime.Days}</em> Days{" "}
             <em>{user.ActiveTime.Hours}</em> Hours{" "}
@@ -54,7 +54,7 @@ function UserProfile({ user }) {
 
         <div className="userProfile__bodyItemContainer">
           <ConnectedTvIcon />
-          <p>Total Strean Time</p>
+          <p className="userProfile__bodyItemContainerHeader">Strean Time</p>
           <p>
             <em>{user.StreamTime.Days}</em> Days{" "}
             <em>{user.StreamTime.Hours}</em> Hours{" "}
@@ -65,7 +65,7 @@ function UserProfile({ user }) {
 
         <div className="userProfile__bodyItemContainer">
           <VideocamIcon />
-          <p>Total WebCam Time</p>
+          <p className="userProfile__bodyItemContainerHeader">WebCam Time</p>
           <p>
             <em>{user.WebCamTime.Days}</em> Days{" "}
             <em>{user.WebCamTime.Hours}</em> Hours{" "}
